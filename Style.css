@@ -1,0 +1,151 @@
+:root{
+    --success-color: rgb(19, 232, 12);
+    --error-color: rgb(241, 43, 8);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #68dce9;
+
+    /* center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+
+    background-color: rgb(158, 8, 233);
+    border: 2px solid black;
+    box-shadow: 3px 5px rgb(8, 0, 0);
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formOut{
+    padding: 10px 0;
+    position: relative;
+}
+
+.formOut label{
+    color:white;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.formOut input{
+    width: 100%;
+    border: 2px solid #0a0303;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.formOut input:focus{
+    border-color: chartreuse;
+    outline: none;
+}
+
+.formOut.success input{
+    border-color: var(--success-color);
+}
+
+.formOut.error input{
+    border-color: var(--error-color);
+}
+
+.formOut small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    visibility: hidden;
+    font-size: 13px;
+}
+
+.formOut.error small{
+    visibility: visible;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: rgb(95, 4, 231);
+    border: none;
+    border-radius: 4px;
+    color: black;
+
+    display: block;
+    padding: 12px;
+    font-size: 18px;
+
+    margin: 20px auto 0;
+    width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px){
+
+    .container{
+        padding: 15px;
+    }
+
+    .formOut input{
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .btn{
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px){
+    .container{
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .formOut input{
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    .btn{
+        font-size: 20px;
+        padding: 14px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px){
+    .container{
+        max-width: 800px;
+        padding: 40px;
+    }
+
+    .formOut input{
+        padding: 16px;
+        font-size: 20px;
+    }
+
+    .btn{
+        font-size: 22px;
+        padding: 16px;
+    }
+}

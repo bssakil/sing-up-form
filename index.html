@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form action="#" method="post" id="form">
+        <div class="container">
+
+            <h1>Create Account</h1>
+
+            <div class="formOut">
+                <label for="userName">User Name</label>
+                <input 
+                    type="text" 
+                    id="userName" 
+                    placeholder="Enter Your Full Name"
+                >
+                <small>Valid Name</small>
+            </div>
+
+            <div class="formOut">
+                <label for="userEmail">Your Email</label>
+                <input 
+                    type="email" 
+                    id="userEmail" 
+                    placeholder="Enter Your Email"
+                >
+                <small>Valid Email</small>
+            </div>
+
+            <div class="formOut">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Do Not Share This Password"
+                >
+                <small>Valid Password</small>
+            </div>
+
+            <div class="formOut">
+                <label for="confirmPassword">Confirm Password</label>
+                <input 
+                    type="password" 
+                    id="confirmPassword" 
+                    placeholder="Enter Same Password"
+                >
+                <small>Valid Confirm Password</small>
+            </div>
+
+            <button class="btn" type="submit">
+                Sign Up
+            </button>
+
+        </div>
+    </form>
+
+    <script src="./validationForm.js"></script>
+
+</body>
+</html>
